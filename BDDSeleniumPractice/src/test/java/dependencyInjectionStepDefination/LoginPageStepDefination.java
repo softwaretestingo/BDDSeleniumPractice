@@ -4,17 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import utils.TestContextSetup;
+import utils.TestContextSetupDependencyInjection;
 public class LoginPageStepDefination {
 	
 	public WebDriver driver;
 	public String productName;
-	TestContextSetup testcontextsetup;
+	TestContextSetupDependencyInjection testcontextsetup;
 	
 	//Constructor
-	public LoginPageStepDefination(TestContextSetup testcontextsetup)
+	public LoginPageStepDefination(TestContextSetupDependencyInjection testcontextsetup)
 	{
 		this.testcontextsetup=testcontextsetup;
 	}
