@@ -5,6 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 		features="src/test/java/features",
 		glue="dependencyInjectionStepDefination",
 		dryRun=false,
+		tags="@SearchIPhoneWithDependencyInjection",
 		monochrome=true
 		)
 public class SearchIPhoneWithDependencyInjectionRunner extends AbstractTestNGCucumberTests

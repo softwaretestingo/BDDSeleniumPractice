@@ -1,9 +1,9 @@
 package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-public class LoginPage {
+public class HomePage {
 	
-	public LoginPage(WebDriver driver) 
+	public HomePage(WebDriver driver) 
 	{
 		this.driver=driver;
 	}

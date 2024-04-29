@@ -2,35 +2,35 @@ package pageObjectStepDefination;
 import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import pageObjects.LoginPage;
+import pageObjects.HomePage;
 import utils.GenericUtils;
 import utils.TestContextSetup;
-public class LoginPageStepDefination {
+public class HomePageStepDefination {
 	
 	public WebDriver driver;
 	public String productName;
 	TestContextSetup testcontextsetup;
 	String homePageURL="https://opencart.softwaretestingo.com/index.php?route=common/home";
-	LoginPage loginPage;
+	HomePage homePage;
 	GenericUtils genericutils;
 	
 	//Constructor
-	public LoginPageStepDefination(TestContextSetup testcontextsetup)
+	public HomePageStepDefination(TestContextSetup testcontextsetup)
 	{
 		this.testcontextsetup=testcontextsetup;
 	}
 	
 	@Given("User is on the OpenCart Landing Page")
 	public void user_is_on_the_open_cart_landing_page() {
-		loginPage=testcontextsetup.pageObjectManager.getLoginPage();
+		homePage=testcontextsetup.pageObjectManager.getHomePage();
 		genericutils = testcontextsetup.pageObjectManager.getGenericUtils();
-		loginPage.launchURL(homePageURL);
+		homePage.launchURL(homePageURL);
 		genericutils.maximizeBrowser();
 	}
 	@When("User Search {string} in the SearchBox")
 	public void user_search_in_the_search_box(String productName) {
 		testcontextsetup.productName=productName;
-		loginPage.searchProduct(productName);
-		loginPage.clickSearchBtn();
+		homePage.searchProduct(productName);
+		homePage.clickSearchBtn();
 	}
 }

@@ -5,7 +5,7 @@ import utils.GenericUtils;
 public class PageObjectManager 
 {
 	WebDriver driver;
-	public LoginPage loginPage;
+	public HomePage homePage;
 	public SearchPage searchPage;
 	public GenericUtils genericutils;
 	
@@ -14,10 +14,10 @@ public class PageObjectManager
 		this.driver=driver;
 	}
 	
-	public LoginPage getLoginPage()
+	public HomePage getHomePage()
 	{
-		loginPage = new LoginPage(driver);
-		return loginPage;
+		homePage = new HomePage(driver);
+		return homePage;
 	}
 	
 	public SearchPage getSearchPage()

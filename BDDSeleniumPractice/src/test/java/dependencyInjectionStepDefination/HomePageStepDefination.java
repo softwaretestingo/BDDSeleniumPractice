@@ -6,14 +6,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import utils.TestContextSetupDependencyInjection;
-public class LoginPageStepDefination {
+public class HomePageStepDefination {
 	
 	public WebDriver driver;
 	public String productName;
 	TestContextSetupDependencyInjection testcontextsetup;
 	
 	//Constructor
-	public LoginPageStepDefination(TestContextSetupDependencyInjection testcontextsetup)
+	public HomePageStepDefination(TestContextSetupDependencyInjection testcontextsetup)
 	{
 		this.testcontextsetup=testcontextsetup;
 	}

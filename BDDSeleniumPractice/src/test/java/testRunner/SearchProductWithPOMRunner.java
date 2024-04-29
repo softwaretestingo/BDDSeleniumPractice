@@ -5,6 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 		features="src/test/java/features",
 		glue="pageObjectStepDefination",
 		dryRun=false,
+		tags="@SearchProductWithPOM",
 		monochrome=true
 		)
 public class SearchProductWithPOMRunner extends AbstractTestNGCucumberTests
