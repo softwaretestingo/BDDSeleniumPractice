@@ -7,6 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 		features="src/test/java/features",
 		glue="pageObjectStepDefination",
 		dryRun=false,
+		tags="@parallel",
 		monochrome=true
 		)
 public class ParallelTestRunner extends AbstractTestNGCucumberTests
