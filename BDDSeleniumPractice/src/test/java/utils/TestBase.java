@@ -1,4 +1,6 @@
 package utils;
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 public class TestBase 
@@ -9,6 +11,7 @@ public class TestBase
 		if (driver == null) 
 		{
 			driver = new ChromeDriver();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		}
 		return driver;
 	}
