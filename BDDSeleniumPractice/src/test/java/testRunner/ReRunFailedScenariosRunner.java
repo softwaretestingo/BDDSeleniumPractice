@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 		glue="pageObjectStepDefination",
 		dryRun=false,
 		tags="@ReRunFailedScenarios",
-		plugin={"rerun: target/failed_scenario.txt"},
+		plugin={"rerun:target/failed_scenario.txt"},
 		monochrome=true
 		)
 public class ReRunFailedScenariosRunner extends AbstractTestNGCucumberTests
